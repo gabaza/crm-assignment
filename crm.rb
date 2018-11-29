@@ -1,4 +1,4 @@
-require "./contact.rb"
+require_relative "contact"
 
 class CRM
 
@@ -52,7 +52,7 @@ class CRM
     print "> "
     note = gets.chomp
     contact = Contact.create(first_name, last_name, email, note)
-  
+
     puts "#{first_name} #{last_name} added."
 
     return contact
